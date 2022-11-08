@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
 
-const Hero = () => {
+type propsType = {
+  todos: string;
+};
+
+const Hero = ({ todos }: propsType) => {
   return (
-    <div>Hero</div>
-  )
-}
+    <div>
+      Hero
+      {todos}
+    </div>
+  );
+};
 
-export default Hero
+export default Hero;
