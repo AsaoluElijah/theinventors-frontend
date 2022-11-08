@@ -1,9 +1,12 @@
-function App() {
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>Welcome React + Typescript</h1>
-    </div>
-  );
+    <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+  )
 }
 
-export default App;
+export default App
