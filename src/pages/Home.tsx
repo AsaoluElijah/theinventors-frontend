@@ -1,14 +1,13 @@
 import Hero from "../components/Hero";
 
+import { useState } from "react";
+
 const Home = () => {
-  const todos: string = "Hello";
+  const todos = "Hello";
   return (
     <div>
       Home
       <Hero todos={todos} />
-      {/* {todos.map((td) => (
-        <p>{td.name}</p>
-      ))} */}
     </div>
   );
 };
