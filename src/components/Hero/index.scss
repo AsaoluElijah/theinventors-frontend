@@ -1,0 +1,58 @@
+.hero-container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../assets/circle-1.png'), url('../../assets/hero-bg-2.png');
+    background-position: right top, left top;
+    background-repeat: no-repeat, repeat;
+    background-size: inherit;
+    overflow: hidden;
+}
+
+.hero-section {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.75rem;
+
+    h2 {
+        font-size: 70px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        color: #1c1c1c;
+    }
+
+    h1 {
+        font-size: 80px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        color: #1c1c1c;
+    }
+
+    p {
+        line-height: 2;
+    }
+
+    .text-purple {
+        color: #9328FF;
+    }
+}
+
+.btn {
+    padding: 10px 25px;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.btn-purple {
+    color: #fff;
+    background: #9328FF;
+
+    :hover {
+        color: #7b21d6;
+        background: #7b21d6;
+    }
+}
