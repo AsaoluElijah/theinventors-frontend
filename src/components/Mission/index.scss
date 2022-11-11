@@ -1,0 +1,38 @@
+.mission-section__container {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+
+	.mission-section__content {
+		flex-basis: 50%;
+
+		.section-title {
+			font-size: 2.5rem;
+			font-weight: 600;
+			color: #801eff;
+			margin-bottom: 20px;
+		}
+
+		.mission-text {
+			font-size: 1.2rem;
+			color: #000;
+			margin-bottom: 20px;
+			line-height: 28.18px;
+
+			p {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.mission-section__image {
+		flex-basis: 30%;
+
+		.mission-img {
+			width: 400px;
+			height: 500px;
+			object-fit: cover;
+			border-radius: 20px;
+		}
+	}
+}

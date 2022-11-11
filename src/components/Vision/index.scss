@@ -1,0 +1,38 @@
+.vision-section__container {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+
+	.vision-section__image {
+		flex-basis: 40%;
+
+		.vision-img {
+			width: 500px;
+			height: 300px;
+			object-fit: cover;
+			border-radius: 20px;
+		}
+	}
+
+	.vision-section__content {
+		flex-basis: 41%;
+
+		.section-title {
+			font-size: 2.5rem;
+			font-weight: 600;
+			color: #801eff;
+			margin-bottom: 20px;
+		}
+
+		.vision-text {
+			font-size: 1.2rem;
+			color: #000;
+			margin-bottom: 20px;
+			line-height: 28.18px;
+
+			p {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

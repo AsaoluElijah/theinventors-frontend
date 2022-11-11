@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-$primary: #801EFF;
+$primary: #801eff;
 $primary-light: #ecddff;
-$font-primary: "Inter";
-$font-secondary: "Monument Extended";
+$font-primary: 'Inter';
+$font-secondary: 'Monument Extended';
 
 * {
 	padding: 0px;
@@ -13,4 +13,19 @@ $font-secondary: "Monument Extended";
 
 body {
 	font-family: $font-primary;
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.section {
+	padding: 100px 0px;
+}
+
+img {
+	width: 100%;
 }

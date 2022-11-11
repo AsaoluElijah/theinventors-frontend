@@ -1,16 +1,5 @@
-import React from "react";
-
-type propsType = {
-  todos: string;
-};
-
-const Hero = ({ todos }: propsType) => {
-  return (
-    <div>
-      Hero
-      {todos}
-    </div>
-  );
+const Hero = () => {
+	return <div>Hero</div>;
 };
 
 export default Hero;
