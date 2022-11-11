@@ -7,7 +7,7 @@ import Vision from '../components/Vision';
 const Home = () => {
 	return (
 		<div>
-			{/* <Hero /> */}
+			<Hero />
 			<AboutUs />
 			<Mission />
 			<Vision />
