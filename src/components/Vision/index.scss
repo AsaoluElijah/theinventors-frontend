@@ -1,13 +1,17 @@
 .vision-section__container {
 	display: flex;
-	justify-content: center;
-	gap: 50px;
+	align-items: center;
+	gap: 150px;
+
+	@media screen and (max-width: 768px) {
+		flex-direction: column-reverse;
+		gap: 0;
+	}
 
 	.vision-section__image {
-		flex-basis: 40%;
+		flex-basis: 50%;
 
 		.vision-img {
-			width: 500px;
 			height: 300px;
 			object-fit: cover;
 			border-radius: 20px;
@@ -15,7 +19,7 @@
 	}
 
 	.vision-section__content {
-		flex-basis: 41%;
+		flex-basis: 50%;
 
 		.section-title {
 			font-size: 2.5rem;
@@ -25,6 +29,7 @@
 		}
 
 		.vision-text {
+			width: 550px;
 			font-size: 1.2rem;
 			color: #000;
 			margin-bottom: 20px;
@@ -32,6 +37,10 @@
 
 			p {
 				margin-bottom: 10px;
+			}
+
+			@media screen and (max-width: 768px) {
+				width: 100%;
 			}
 		}
 	}

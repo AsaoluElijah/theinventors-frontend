@@ -17,6 +17,11 @@
 		justify-content: space-between;
 		gap: 20px;
 
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			gap: 0;
+		}
+
 		.member {
 			display: flex;
 			flex-direction: column;
