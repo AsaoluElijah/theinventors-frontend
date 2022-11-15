@@ -2,9 +2,16 @@ import './index.scss';
 import NavbarTransparent from '../NavbarTransparent';
 import { RoughNotation } from 'react-rough-notation';
 
+import member3 from '../../images/react-icon.png';
+
 const Hero = () => {
 	return (
 		<section className="hero-container">
+			<div className="circle">
+				<div className="circle-container">
+					<img src={member3} alt="" />
+				</div>
+			</div>
 			<NavbarTransparent />
 			<div className="hero-section_container container">
 				<div className="hero-section">

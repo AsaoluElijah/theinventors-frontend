@@ -58,6 +58,33 @@ $displays: 'flex', 'block', 'inline-block';
 	padding: 100px 0px;
 }
 
+.title-container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 20px;
+
+	.section-title {
+		font-size: 2.5rem;
+		font-weight: 600;
+		color: #801eff;
+	}
+
+	.line {
+		height: 10px;
+		width: 50px;
+		background: linear-gradient(90deg, #b6a4ff 0%, #ffaaaa 100%);
+		margin-top: 10px;
+	}
+
+	.line2 {
+		height: 10px;
+		width: 50px;
+		background: linear-gradient(90deg, #ffaaaa 0%, #b6a4ff 100%);
+		margin-top: 10px;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.container {
 		padding: 0 20px;

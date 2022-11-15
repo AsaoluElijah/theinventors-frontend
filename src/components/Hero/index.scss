@@ -7,6 +7,48 @@
 	background-repeat: no-repeat, repeat;
 	background-size: inherit;
 	overflow: hidden;
+	position: relative;
+
+	.circle {
+		position: absolute;
+		top: -20%;
+		right: -20%;
+		width: 700px;
+		height: 700px;
+		border-radius: 50%;
+		border: 5px dotted #801eff;
+		z-index: 1;
+
+		.circle-container {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			border: 10px dashed #801eff;
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			animation: circle 5s infinite;
+
+			@keyframes circle {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+
+			img {
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				object-fit: cover;
+			}
+		}
+	}
 }
 
 .hero-section_container {
