@@ -3,25 +3,40 @@
 
 	.aboutus-section__container {
 		display: flex;
-		gap: 40px;
+		align-items: center;
+		gap: 150px;
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			gap: 0;
+		}
 
 		.aboutus-images {
 			flex-basis: 50%;
-			display: flex;
-			// justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			gap: 10px;
 
 			.image-row {
 				display: flex;
 				gap: 10px;
+				height: 250px;
+				margin-bottom: 20px;
 
 				.about-img {
-					width: 100%;
-					height: 100%;
 					object-fit: cover;
 					border-radius: 20px;
+				}
+
+				.wide1 {
+					flex-basis: 40%;
+				}
+
+				.wide2 {
+					flex-basis: 60%;
+				}
+			}
+
+			@media screen and (max-width: 768px) {
+				.image-row {
+					height: 180px;
 				}
 			}
 		}
@@ -37,13 +52,19 @@
 			}
 
 			.aboutus-text {
+				width: 550px;
 				font-size: 1.2rem;
+				font-weight: 400;
 				color: #000;
 				margin-bottom: 20px;
 				line-height: 28.18px;
 
 				p {
 					margin-bottom: 10px;
+				}
+
+				@media screen and (max-width: 768px) {
+					width: 100%;
 				}
 			}
 		}
