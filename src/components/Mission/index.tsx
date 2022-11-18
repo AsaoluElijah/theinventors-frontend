@@ -1,12 +1,28 @@
 import './index.scss';
 import missionImage from '../../images/mission-img.png';
 
+import { motion } from 'framer-motion';
+
+import { sectionVariant, childrenVariant } from '../../utilities/animations';
+
 const Mission = () => {
 	return (
 		<div className="section mission-section">
-			<div className="mission-section__container container">
-				<div className="mission-section__content">
-					<h2 className="section-title">Our Mission</h2>
+			<motion.div
+				className="mission-section__container container"
+				variants={sectionVariant}
+				initial="offscreen"
+				whileInView="onscreen"
+				viewport={{ once: true }}
+			>
+				<motion.div
+					className="mission-section__content"
+					variants={childrenVariant}
+				>
+					<div className="title-container">
+						<h2 className="section-title">About Us</h2>
+						<div className="line"></div>
+					</div>
 					<div className="mission-text">
 						<p>
 							We aim at guiding and training students on campus based on the
@@ -22,11 +38,11 @@ const Mission = () => {
 							from instructors at Inventors.
 						</p>
 					</div>
-				</div>
+				</motion.div>
 				<div className="mission-section__image">
 					<img src={missionImage} className="mission-img" alt="" />
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	);
 };

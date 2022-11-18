@@ -5,17 +5,15 @@
 	align-items: center;
 	gap: 50px;
 
-	.section-title {
-		font-size: 2.5rem;
-		font-weight: 600;
-		color: #801eff;
-		margin-bottom: 20px;
-	}
-
 	.members-section__content {
 		display: flex;
 		justify-content: space-between;
 		gap: 20px;
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			gap: 0;
+		}
 
 		.member {
 			display: flex;

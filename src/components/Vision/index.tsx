@@ -1,15 +1,31 @@
 import './index.scss';
 import visionImage from '../../images/vision-img.png';
 
+import { motion } from 'framer-motion';
+
+import { sectionVariant, childrenVariant } from '../../utilities/animations';
+
 const Vision = () => {
 	return (
 		<div className="section vision-section">
-			<div className="vision-section__container container">
+			<motion.div
+				className="vision-section__container container"
+				variants={sectionVariant}
+				initial="offscreen"
+				whileInView="onscreen"
+				viewport={{ once: true }}
+			>
 				<div className="vision-section__image">
 					<img src={visionImage} className="vision-img" alt="" />
 				</div>
-				<div className="vision-section__content">
-					<h2 className="section-title">Our Vision</h2>
+				<motion.div
+					className="vision-section__content"
+					variants={childrenVariant}
+				>
+					<div className="title-container">
+						<h2 className="section-title">Our Vision</h2>
+						<div className="line"></div>
+					</div>
 					<div className="vision-text">
 						<p>
 							Inventors community is solely concerned about individual
@@ -17,8 +33,8 @@ const Vision = () => {
 							through the medium of mentor and mentees, awareness seminar.
 						</p>
 					</div>
-				</div>
-			</div>
+				</motion.div>
+			</motion.div>
 		</div>
 	);
 };

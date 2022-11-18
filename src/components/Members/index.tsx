@@ -3,13 +3,27 @@ import member1 from '../../images/member1.png';
 import member2 from '../../images/member2.png';
 import member3 from '../../images/member3.png';
 
+import { motion } from 'framer-motion';
+
+import { sectionVariant, childrenVariant } from '../../utilities/animations';
+
 const Members = () => {
 	return (
 		<div className="section members-section">
-			<div className="members-section__container container">
-				<h2 className="section-title">Community Members</h2>
+			<motion.div
+				className="members-section__container container"
+				variants={sectionVariant}
+				initial="offscreen"
+				whileInView="onscreen"
+				viewport={{ once: true }}
+			>
+				<div className="title-container">
+					<div className="line2"></div>
+					<h2 className="section-title">Community Members</h2>
+					<div className="line"></div>
+				</div>
 				<div className="members-section__content">
-					<div className="member">
+					<motion.div className="member" variants={childrenVariant}>
 						<div className="member__image">
 							<img src={member1} alt="" />
 						</div>
@@ -17,8 +31,8 @@ const Members = () => {
 							<h3 className="member__name">John Doe</h3>
 							<p className="member__role">Founder</p>
 						</div>
-					</div>
-					<div className="member">
+					</motion.div>
+					<motion.div className="member" variants={childrenVariant}>
 						<div className="member__image">
 							<img src={member2} alt="" />
 						</div>
@@ -26,8 +40,8 @@ const Members = () => {
 							<h3 className="member__name">Jake Doe</h3>
 							<p className="member__role">Founder</p>
 						</div>
-					</div>
-					<div className="member">
+					</motion.div>
+					<motion.div className="member" variants={childrenVariant}>
 						<div className="member__image">
 							<img src={member3} alt="" />
 						</div>
@@ -35,9 +49,9 @@ const Members = () => {
 							<h3 className="member__name">Jane Doe</h3>
 							<p className="member__role">Founder</p>
 						</div>
-					</div>
+					</motion.div>
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	);
 };
