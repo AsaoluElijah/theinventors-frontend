@@ -17,23 +17,35 @@ body {
 	font-family: $font-primary;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+	font-family: 'Poppins';
+}
+
 /* ✨ UTILITY CLASSES */
 
 // TEXT
-$text-sizes: (
-	'sm': '12px',
+$text-sizes: ('sm': '12px',
 	'md': '18px',
 	'lg': '25px',
 );
 
-@each $text, $size in $text-sizes {
+@each $text,
+$size in $text-sizes {
 	.text-#{$text} {
 		font-size: $size;
 	}
 }
 
 // DISPLAY
-$displays: 'flex', 'block', 'inline-block';
+$displays: 'flex',
+'block',
+'inline-block';
 
 @each $display in $displays {
 	.d-#{$display} {

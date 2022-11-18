@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        :hover {
+            color: rebeccapurple;
+            text-decoration: underline;
+        }
+    }
+
+    .nav-items {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+
+        li {
+            margin: 0 30px;
+
+
+        }
+    }
+}

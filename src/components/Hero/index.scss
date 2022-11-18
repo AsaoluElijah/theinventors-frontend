@@ -3,7 +3,7 @@
     width: 100vw;
     background-image: url('../../assets/circle-1.png'), url('../../assets/hero-bg-2.png');
     background-position: right top, left top;
-    background-repeat: no-repeat, repeat;
+    background-repeat: no-repeat, no-repeat, repeat;
     background-size: inherit;
     overflow: hidden;
 }
