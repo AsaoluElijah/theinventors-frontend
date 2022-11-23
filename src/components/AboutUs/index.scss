@@ -12,6 +12,8 @@
 		}
 
 		.aboutus-images {
+			max-width: 100%;
+			overflow: hidden;
 			flex-basis: 50%;
 
 			.image-row {
