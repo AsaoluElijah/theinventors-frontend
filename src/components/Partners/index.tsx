@@ -1,6 +1,7 @@
 import './index.scss';
 
 import partner1 from '../../images/gdsc-logo.png';
+import partner2 from '../../images/osca-logo.png';
 
 const Partners = () => {
 	return (
@@ -21,13 +22,13 @@ const Partners = () => {
 							<img src={partner1} alt="" />
 						</div>
 						<div className="partner__image">
-							<img src={partner1} alt="" />
+							<img src={partner2} alt="" />
 						</div>
 						<div className="partner__image">
 							<img src={partner1} alt="" />
 						</div>
 						<div className="partner__image">
-							<img src={partner1} alt="" />
+							<img src={partner2} alt="" />
 						</div>
 					</div>
 				</div>
